@@ -223,6 +223,7 @@ div, ul, nav, header, footer, a, li, label, body{
 h1{
     font-family: sans-serif;
     font-size: 2.9rem;
+    margin: 0 auto;
     margin-top: 50px;
     justify-content: center;
     text-align: center;
@@ -232,13 +233,15 @@ h1{
     flex-direction: column;
 }
 .prueba{
-    margin: 20px ;
+    margin: 30px 20px;
+    border-top: 1px solid var(--clarito-color);
 }
 .button-container{
     
     justify-content: center;
     align-items: center;
     display: flex;
+    margin: 0 auto;
 }
 .div-button{
     margin-top: 15px;
@@ -271,7 +274,7 @@ input{
     font-size: 1.1rem;
 }
 .parrafo-container a{
-    color: rgb(255, 215, 70);
+    color: white;
     text-decoration: underline;
 }
 
