@@ -265,6 +265,17 @@ input{
     border-radius: 15px;
     box-shadow: 0 0 9px ;
 }
+.parrafo-container{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.parrafo-container a{
+    color: rgb(255, 215, 70);
+    text-decoration: underline;
+}
+
+
 /*FOOTER */
 
 
