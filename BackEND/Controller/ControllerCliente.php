@@ -1,10 +1,10 @@
 <?php
 
-require_once '../Modelo/ModeloCliente.php';
+require_once '../Model/ModelCliente.php';
 
-$funcion = $_GET['funcion'];
+$function = $_GET['function'];
 
-switch ($funcion){
+switch ($function){
     case "Obtener":
         ObtenerCliente();
     break;
@@ -14,7 +14,7 @@ switch ($funcion){
 }
 
 function ObtenerCliente(){
-    $resultado = (new usuario())->ObtenerClienteModelo();
+    $resultado = (new cliente())->ObtenerClienteModel();
     echo json_encode($resultado);
 }
 
@@ -22,7 +22,7 @@ function RegisterCliente(){
     $usuario = $_POST['usuario'];
     $email = $_POST['email'];
     $contraseña = $_POST['contraseña'];
-    $resultado = (new cliente())->RegisterCliente($usuario, $email, $contraseña);
+    $resultado = (new cliente())->RegisterClienteModel($usuario, $email, $contraseña);
     echo json_encode($resultado);
 }
 
