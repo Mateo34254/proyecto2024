@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="RegisterCliente.css" />
+    <script src="RegisterCliente.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -16,7 +17,7 @@
 
     <header class="header">
       <div class="header__logo-container">
-        <img class="header__logo" src="../IMG/logoProyectoEMPRESA.png" />
+        <img class="header__logo" src="../Style/logoProyectoEMPRESA.png" />
       </div>
       <div class="div__header__nav">
         <nav class="header__nav">
@@ -68,7 +69,7 @@
             </li>
             <div class="login-container">
               <li class="login">
-                <a class="login2" href="../Login/logIn.html">Log In</a>
+                <a class="login2" href="../Login/LoginCliente.html">Log In</a>
               </li>
             </div>
           </ul>
@@ -82,15 +83,19 @@
 
     <main>
       <div class="div-container">
-          <img class="img-div-form" src="../IMG/logoProyectoEMPRESA.png" alt="" />
-        <form class="form-container">
+          <img class="img-div-form" src="../Style/logoProyectoEMPRESA.png" alt="" />
+        <form id="Register" class="form-container">
           <div class="formulario-container">
             <h1>Registrarse</h1>
             <div class="prueba">
               <div class="form_input">
                 <div class="prueba2">
-                  <label for="nombre"><h2>Usuario</h2></label>
-                  <input type="text" placeholder="Ejemplo" id="nombre" />
+                  <label for="usuario"><h2>Usuario</h2></label>
+                  <input 
+                  type="text" 
+                  placeholder="Ejemplo"
+                  id="usuario" 
+                  name="usuario"/>
                 </div>
               </div>
 
@@ -100,17 +105,19 @@
                   <input
                     type="email"
                     placeholder="Ejemplo@Email.com"
-                    id="email"
+                    id="email" 
+                    name="email"
                   />
                 </div>
               </div>
               <div class="form_input">
                 <div class="prueba2">
-                  <label for="email"><h2>Contraseña</h2></label>
+                  <label for="contraseña"><h2>Contraseña</h2></label>
                   <input
                     type="password"
                     placeholder="Password"
                     id="contraseña"
+                    name="contraseña"
                   />
                 </div>
               </div>
@@ -123,7 +130,7 @@
             <div class="parrafo-container">
               <p>
                 En caso de tener una cuenta
-                <a href="../Login/logIn.html">Log In</a>
+                <a href="../Login/LoginCliente.html">Log In</a>
               </p>
             </div>
           </div>
