@@ -384,17 +384,35 @@ h1{
     text-align: center;
     margin: auto;
     margin-top: 50px;
+    font-size: 2.7rem;
 }
+.h1animado{
+    opacity: 0;
+    transform: translateY(-150px); /* Inicialmente fuera de la vista, arriba */
+    animation: titulo 1.3s forwards; /* Aplicar la animación */
+}
+
+@keyframes titulo {
+    from {
+        opacity: 0;
+        transform: translateY(-150px); /* Empezar desde arriba */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Mover hacia abajo hasta su posición original */
+        }
+}
+
 h2{
     margin-left: 10px;
 }
-.producto-container{
-    margin: 40px 0px;
+.producto-container1, .producto-container2, .producto-container3, .producto-container4, .producto-container5, .producto-container6, .producto-container7 {
+    margin: 90px 0px;
     background-color: var(--clarito-color);
     padding: 10px 0 30px 0;
     box-shadow: 0 0 10px black;
 }
-.producto-mosquitero, .producto-ventana, .producto-puerta, .producto-mampara, .producto-pañofijo, .producto-monoblok, .producto-vidrio {
+.producto-mosquitero, .producto-ventana, .producto-puerta, .producto-mampara, .producto-pañofijo, .producto-monoblock, .producto-vidrio {
     display: flex;
 }
 .producto{
