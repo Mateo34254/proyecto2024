@@ -4,35 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Productos.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <title>Home</title>
+    <title>Productos</title>
   </head>
   <body>
     <header class="header">
       <div class="header__logo-container">
-        <img class="header__logo" src="../Style/logoProyectoEMPRESA.png" />
+        <img class="header__logo" src="../img/logoProyectoEMPRESA.png" />
       </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <span class="material-symbols-outlined logo_header">Home</span>
             <a href="../Inicio/Inicio.html">Inicio</a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item2">
             <div class="menu">
               <ul class="tipos-productos">
                 <li>
                   <div class="productos-navbar">
-                    <span class="material-symbols-outlined logo_header"
-                      >Shopping_cart</span
-                    >
                     <a
                       class="productos-principal"
                       href="../Productos/Productos.html"
-                      >Productos</a
+                      >Productos🡣</a
                     >
                   </div>
                   <ul>
@@ -43,7 +35,7 @@
                       <a href="#">VENTANAS</a>
                     </li>
                     <li class="lista-productos">
-                      <a href="#">PUERTAS</a>
+                      <a href="seccion" id="Puertas">PUERTAS</a>
                     </li>
                     <li class="lista-productos">
                       <a href="#">MAMPARAS</a>
@@ -62,13 +54,99 @@
               </ul>
             </div>
           </li>
+          <div class="carrito-container">
+            <img src="../img/Carrito.png" class="imagen-carrito" alt="" />
+          </div>
           <li class="login">
             <a class="login2" href="../Login/LoginCliente.html">Log In</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <h1>Todos los Productos</h1>
+      <div class="todos-productos">
+        <div class="producto-container">
+          <h2>Mosquiteros</h2>
+          <div class="producto-mosquitero">
+            <div class="producto">
+              <img src="../img/prueba.png" alt="" />
+              <h3>NombreProducto</h3>
+              <p>$1200</p>
+            </div>
+            <div class="producto">
+              <img src="../img/prueba.png" alt="" />
+              <h3>NombreProducto</h3>
+              <p>$1200</p>
+            </div>
+            <div class="producto">
+              <img src="../img/prueba.png" alt="" />
+              <h3>NombreProducto</h3>
+              <p>$1200</p>
+            </div>
+            <div class="producto">
+              <img src="../img/prueba.png" alt="" />
+              <h3>NombreProducto</h3>
+              <p>$1200</p>
+            </div>
+          </div>
+        </div>
+        <div class="producto-ventana">
+          <div class="producto-container">
+          <h2>Ventanas</h2>
+          <div class="producto-ventana">
+            <div class="producto">
+              <img src="../img/prueba.png" alt="" />
+              <h3>NombreProducto</h3>
+              <p>$1200</p>
+            </div>
+            <div class="producto">
+              <img src="../img/prueba.png" alt="" />
+              <h3>NombreProducto</h3>
+              <p>$1200</p>
+            </div>
+            <div class="producto">
+              <img src="../img/prueba.png" alt="" />
+              <h3>NombreProducto</h3>
+              <p>$1200</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="producto-puerta" id="Puertas">
+          <div class="producto-container">
+          <h2>Puertas</h2>
+          </div>
+        </div>
+        <div class="producto-mampara">
+          <div class="producto-container">
+          <h2>Mamparas</h2>
+          </div>
+        </div>
+        <div class="producto-pañofijo">
+          <div class="producto-container">
+          <h2>Pañofijos</h2>
+          </div>
+        </div>
+        <div class="producto-monoblok">
+          <div class="producto-container">
+          <h2>Monoblocks</h2>
+          </div>
+        </div>
+        <div class="producto-vidrio">
+          <div class="producto-container">
+          <h2>Vidrios</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--  FOOTER  -->
+
+    <footer>
+      <div class="footer-general">Sofia Aberturas @CopyRight 2024</div>
+    </footer>
+
+    <!-- / FOOTER  -->
   </body>
 </html>
