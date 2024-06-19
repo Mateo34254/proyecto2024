@@ -11,13 +11,5 @@ class Cliente {
         $clientes = $respuesta->fetch_all(MYSQLI_ASSOC);
         return $clientes;
     }
-
-    public function RegisterClienteModel($usuario, $email, $contraseña){
-        $sql = "INSERT INTO cliente(usuario, email, contraseña) VALUES( '$usuario', '$email', '$contraseña');";
-        $connection = connection();
-        $respuesta = $connection->query($sql);
-        return $respuesta;
-    }
-
 }
 ?>
