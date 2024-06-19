@@ -11,7 +11,7 @@ switch ($function){
 }
 
 function ObtenerCliente(){
-    $resultado = (new cliente())->ObtenerClienteModel();
+    $resultado = (new Cliente())->ObtenerClienteDAO();
     echo json_encode($resultado);
 }
 ?>
